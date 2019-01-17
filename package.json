@@ -1,8 +1,8 @@
 {
   "name": "pupmate",
   "version": "1.0.0",
-  "description": "Use a Node and Express Web Server;",
-  "main": "index.js",
+  "description": "Find your puppy a playmate",
+  "main": "server.js",
   "dependencies": {
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
@@ -12,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

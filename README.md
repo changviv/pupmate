@@ -1,5 +1,7 @@
 # pupmate
 
+Find your puppy a playmate
+
 Use a Node and Express Web Server;
 
 * Be backed by a MySQL Database an ORM (not necessarily Sequelize);
