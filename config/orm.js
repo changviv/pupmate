@@ -13,19 +13,21 @@ var orm = {
 		});
 	},
 	// UPDATE (PUT method)
-	updateOne: function(table, col, val, id, cb) {
-		queryString = "UPDATE ?? SET ?? = ? WHERE id = ?";
-		connection.query(queryString, [table, col, val, id], function(err, result) {
-			if (err) throw err;
-			cb(result);
-		});
-	},
+	// updateOne: function(table, col, val, id, cb) {
+	// 	queryString = "UPDATE ?? SET ?? = ? WHERE id = ?";
+	// 	connection.query(queryString, [table, col, val, id], function(err, result) {
+	// 		if (err) throw err;
+	// 		cb(result);
+	// 	});
+	// },
 	// CREATE (POST method)
-	insertOne: function(table, col, val, cb) {
-		queryString = "INSERT INTO ?? (??) VALUES(?);";
-		connection.query(queryString, [table, col, val], function(err, result) {
-			if (err) throw err;
-			cb(result);
-		});
-	}
+	// insertOne: function(table, col, val, cb) {
+	// 	queryString = "INSERT INTO ?? (??) VALUES(?);";
+	// 	connection.query(queryString, [table, col, val], function(err, result) {
+	// 		if (err) throw err;
+	// 		cb(result);
+	// 	});
+	// }
 };
+
+module.exports = orm;
