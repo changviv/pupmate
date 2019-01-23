@@ -1,0 +1,30 @@
+body {
+	 background-color: #FADA5E;
+}
+
+.create-form {
+	width: 75%;
+	margin: 25px auto;
+	border: solid 1px grey;
+	border-radius: .4rem;
+	padding: 10px 30px 20px 30px;
+	box-shadow: 15px 15px 5px grey;
+	background-image: linear-gradient(lightyellow, gold);
+}
+
+h1 {
+	font-family: 'McLaren', cursive;
+	font-size: 100px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#tagline {
+	margin: 0 auto;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'McLaren', cursive;
+	font-size: 50px;
+}

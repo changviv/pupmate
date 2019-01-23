@@ -1,33 +1,42 @@
 var connection = require("./connection.js")
 
 var queryString;
+
+function printQuestionMarks(num) {
+	var arr = [];
+
+	for (var i = 0; i < num.length; i++) {
+		arr.push("?");
+	}
+
+	return arr.toString();
+}
 var orm = {
 	// READ (GET method)
-	selectAll: function(table, cb) {
+	all: function(table, cb) {
 		queryString = "SELECT * FROM ??";
 		connection.query(queryString, [table], function(err, result) {
 			if (err) throw err;
 			cb(result);
-			console.log("Select All Results:");
-			console.log(result);
+			console.log("it's working")
+			// console.log("Select All Results:");
+			// console.log(result);
 		});
 	},
-	// UPDATE (PUT method)
-	// updateOne: function(table, col, val, id, cb) {
-	// 	queryString = "UPDATE ?? SET ?? = ? WHERE id = ?";
-	// 	connection.query(queryString, [table, col, val, id], function(err, result) {
-	// 		if (err) throw err;
-	// 		cb(result);
-	// 	});
-	// },
 	// CREATE (POST method)
-	// insertOne: function(table, col, val, cb) {
-	// 	queryString = "INSERT INTO ?? (??) VALUES(?);";
-	// 	connection.query(queryString, [table, col, val], function(err, result) {
-	// 		if (err) throw err;
-	// 		cb(result);
-	// 	});
-	// }
+	insert: function(table, vals, cb) {
+		queryString = ("INSERT INTO " + table
+					   + " (name, breed, city, age, size, gender, neutered, photo) VALUES ("
+					   + printQuestionMarks(vals.length)
+					   + ");"
+					  )
+		console.log(queryString);
+
+		connection.query(queryString, vals, function(err, result) {
+			if (err) throw err;
+			cb(result);
+		});
+	}
 };
 
 module.exports = orm;

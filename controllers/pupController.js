@@ -11,11 +11,13 @@ router.get("/", function (req, res) {
 });
 
 // CREATE (POST) route
-// router.post("/api/pupper", function(req, res){
-// 	pupper.create(req.body.name, function(result) {
-// 		res.json({ id: result.insertId });
-// 	});
-// });
+router.post("/api/pupper", function(req, res){
+	console.log(req.body)
+
+	pupper.create(req.body.name, function(result) {
+		res.json({ id: result.insertId });
+	});
+});
 
 // // Update (PUT) route
 // router.put("/api/pupper/:id", function (req, res) {
