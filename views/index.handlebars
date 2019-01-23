@@ -2,82 +2,78 @@
 
 <h2 id="tagline">Find your puppy a playmate!</h2>
 
-{{!-- <ul>
+{{!--  <ul class="puppyList">
     {{#each puppers}}
         <li>
             {{name}}
         </li>
     {{/each}}
-</ul> --}}
-
+</ul> 
+ --}}
 
 {{!-- Add Puppy to List --}}
 	
 <form class="create-form">
-	<h2>Create your puppy 	profile!</h2>
+	<h2>Create your puppy profile!</h2>
 	<div class="form-group">
-	  <label for="name">Name</label>
-	  <input type="text" class="form-control" id="name" placeholder="Zoe">
+	  <input type="text" class="form-control" id="name" placeholder="Name">
 	</div>
 	<div class="form-group">
-	  <label for="breed">Breed</label>
-	  <input type="text" class="form-control" id="breed" placeholder="Husky/Lab">
+	  <input type="text" class="form-control" id="breed" placeholder="Breed">
 	</div>
-	<div class="form-group">
-	  <label for="city">City</label>
-	  <input type="text" class="form-control" id="city" placeholder="San Francisco">
+	<div class="form-group form-row">
+	  	<div class="col-7">
+	        <input type="text" class="form-control" id="city" placeholder="City">
+	    </div>
+	    <div class="col">
+	        <input type="text" class="form-control" id="state" placeholder="State">
+	    </div>
 	</div>
-	<div class="form-group">
-	  <label for="state">State</label>
-	  <input type="text" class="form-control" id="state" placeholder="California">
-	</div>
-	<div class="form-group">
-	    <label for="age">Age</label>
-	    <select class="form-control" id="age">
-	      <option></option>
-	      <option><1</option>
-	      <option>1</option>
-	      <option>2</option>
-	      <option>3</option>
-	      <option>4</option>
-	      <option>5</option>
-	      <option>6</option>
-	      <option>7</option>
-	      <option>8</option>
-	      <option>9</option>
-	      <option>10+</option >
-	    </select>
-	</div>
-	<div class="form-group">
-	    <label for="size">Size</label>
-	    <select class="form-control" id="size">
-	      <option></option>
-	      <option>XS</option>
-	      <option>S</option>
-	      <option>M</option>
-	      <option>L</option>
-	      <option>XL</option>
-	    </select>
-	</div>
-	<div class="form-group">
-	    <label for="gender">Gender</label>
-	    <select class="form-control" id="gender">
-	      <option></option>
-	      <option>Female</option>
-	      <option>Male</option>
-	    </select>
-	</div>
-	<div class="form-group">
-	    <label for="neutered">Neutered/	Spayed</label>
-	    <select class="form-control" id="neutered">
-	      <option></option>
-	      <option>Yes</option>
-	      <option>No</option>
-	    </select>
+	<div class="form-group form-row">
+		<div class="col">
+			<select class="form-control" id="age">
+	    	  <option selected>Age</option>
+	    	  <option value="0"><1</option>
+	    	  <option value="1">1</option>
+	    	  <option value="2">2</option>
+	    	  <option value="3">3</option>
+	    	  <option value="4">4</option>
+	    	  <option value="5">5</option>
+	    	  <option value="6">6</option>
+	    	  <option value="7">7</option>
+	    	  <option value="8">8</option>
+	    	  <option value="9">9</option>
+	    	  <option value="10">10></option >
+	    	</select>
+		</div>
+		<div class="col">
+			<select class="form-control" id="size">
+			  <option selected>Size</option>
+			  <option value="XS">XS</option>
+			  <option value="S">S</option>
+			  <option value="M">M</option>
+			  <option value="L">L</option>
+			  <option value="XL">XL</option>
+			</select>
+		</div>    
+		<div class="col">
+			<select class="form-control" id="gender">
+			  <option selected>Gender</option>
+			  <option value="F">Female</option>
+			  <option value="M">Male</option>
+			</select>
+		</div>
+		<div class="col">
+			<select class="form-control" id="neutered">
+			  <option selected>Neutered/Spayed</option>
+			  <option value="true">Yes</option>
+			  <option value="false">No</option>
+			</select>
+		</div>
 	</div>
     <div class="form-group">
         <label for="photo">Add a Photo (Optional)</label>
         <input type="file" 	class="form-control-file" id="photo">
     </div>
-    <button type="submit" class="btn 	btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Add PupMate</button>
 </form>

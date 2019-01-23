@@ -1,7 +1,7 @@
 var orm = require("../config/orm.js")
 
 var pupper = {
-	create: function(table, vals, cb) {
+	create: function(vals, cb) {
 		orm.insert("puppers",vals, function(res) {
 			cb(res);
 		});

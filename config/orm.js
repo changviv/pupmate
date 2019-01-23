@@ -34,7 +34,9 @@ var orm = {
 
 		connection.query(queryString, vals, function(err, result) {
 			if (err) throw err;
+
 			cb(result);
+			console.log("it's working to insert")
 		});
 	}
 };

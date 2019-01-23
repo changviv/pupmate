@@ -7,14 +7,14 @@ body {
 	margin: 25px auto;
 	border: solid 1px grey;
 	border-radius: .4rem;
-	padding: 10px 30px 20px 30px;
+	padding: 10px 50px 20px 50px;
 	box-shadow: 15px 15px 5px grey;
 	background-image: linear-gradient(lightyellow, gold);
 }
 
 h1 {
 	font-family: 'McLaren', cursive;
-	font-size: 100px;
+	font-size: 80px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -26,5 +26,5 @@ h1 {
 
 h2 {
 	font-family: 'McLaren', cursive;
-	font-size: 50px;
+	font-size: 34px;
 }

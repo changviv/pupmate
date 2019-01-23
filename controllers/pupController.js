@@ -12,26 +12,12 @@ router.get("/", function (req, res) {
 
 // CREATE (POST) route
 router.post("/api/pupper", function(req, res){
-	console.log(req.body)
+	var req = req.body
 
-	pupper.create(req.body.name, function(result) {
+	pupper.create([req.name, req.breed, req.city, req.age, req.size, req.gender, req.neutered. req.photo], function(result) {
 		res.json({ id: result.insertId });
 	});
 });
-
-// // Update (PUT) route
-// router.put("/api/pupper/:id", function (req, res) {
-// 	pupper.update("devoured", req.body.devoured, req.params.id, function(result) {
-// 		if (result.changedRows === 0) {
-// 			// If no rows were changed, 
-// 			// then the ID must not exist, so 404
-// 			return res.status(404).end();
-// 		} else {
-// 			res.status(200).end();
-// 		}
-// 		console.log(result)
-// 	});
-// });
 
 // Export routes for server.js to use.
 module.exports = router;
