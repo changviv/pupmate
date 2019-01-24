@@ -13,9 +13,15 @@ router.get("/", function (req, res) {
 // CREATE (POST) route
 router.post("/api/pupper", function(req, res){
 	var req = req.body
+	var vals = [];
 
-	pupper.create([req.name, req.breed, req.city, req.age, req.size, req.gender, req.neutered. req.photo], function(result) {
+	for (key in req) {
+		vals.push(req[key])
+	}
+
+	pupper.create(vals, function(result) {
 		res.json({ id: result.insertId });
+		// res.render("newview", { puppers: data });
 	});
 });
 

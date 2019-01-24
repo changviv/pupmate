@@ -1,28 +1,31 @@
 $(function() {
+	$(".puppyList").hide();
+
 	$(".create-form").on("submit", function(event) {
 		event.preventDefault();
-		alert("it's working")
 
-		// everything below is not working
-		console.log("hello - you've submitted")
-		
-		name = $("#name").val().trim();
-		breed = $("#breed").val().trim();
-		city = $("#city").val().trim();
-		age = $("#age").val();
-		size = $("#size").val();
-		gender = $("#gender").val();
-		neutered = $("#neutered").val();
-		photo = $("#photo").val();
+		var newPuppers = {
+		    name : $("#name").val().trim(),
+		    breed : $("#breed").val().trim(),
+		    city : $("#city").val().trim(),
+		    state: $("#state").val().trim(),
+		    age : parseInt($("#age").val().trim()),
+		    size : $("#size").val().trim(),
+		    gender : $("#gender").val().trim(),
+		    neutered : ($("#neutered").val().trim() === "true") ? 1 : 0,
+		    photo : ($("#photo").val().trim() === "") ? "public/assets/images/default_profile.png" : $("#photo").val().trim()
+		 };
 
-
-		console.log("name ",name);
-		console.log("breed ",breed);
-		console.log("city ",city);
-		console.log("age ",age);
-		console.log("size ",size);
-		console.log("gender ",gender);
-		console.log("neutered ",neutered);
-		console.log("photo ",photo);
-	})
+		  // Send the POST request.
+		$.ajax("/api/pupper", {
+		    type: "POST",
+		    data: newPuppers
+		}).then(
+		    function() {
+		      console.log("created new doggy");
+		      // Reload the page to get the updated list
+		      location.reload();
+		    }
+		);
+	});
 });

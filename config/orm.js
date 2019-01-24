@@ -5,12 +5,14 @@ var queryString;
 function printQuestionMarks(num) {
 	var arr = [];
 
-	for (var i = 0; i < num.length; i++) {
+	for (var i = 0; i < num; i++) {
 		arr.push("?");
 	}
 
 	return arr.toString();
-}
+};
+
+
 var orm = {
 	// READ (GET method)
 	all: function(table, cb) {
@@ -25,8 +27,9 @@ var orm = {
 	},
 	// CREATE (POST method)
 	insert: function(table, vals, cb) {
-		queryString = ("INSERT INTO " + table
-					   + " (name, breed, city, age, size, gender, neutered, photo) VALUES ("
+		queryString = ("INSERT INTO "
+					   + table
+					   + " (name, breed, city, state, age, size, gender, neutered, photo) VALUES ("
 					   + printQuestionMarks(vals.length)
 					   + ");"
 					  )
@@ -34,9 +37,8 @@ var orm = {
 
 		connection.query(queryString, vals, function(err, result) {
 			if (err) throw err;
-
 			cb(result);
-			console.log("it's working to insert")
+			console.log("Create new pup success")
 		});
 	}
 };

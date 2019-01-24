@@ -14,5 +14,5 @@ CREATE TABLE puppers (
     neutered BOOLEAN DEFAULT true,
     city VARCHAR(255) NOT NULL,
     state VARCHAR(255) NOT NULL,
-    photo BLOB
+    photo VARCHAR(255) 
 );
