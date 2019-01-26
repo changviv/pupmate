@@ -1,5 +1,10 @@
 body {
-	 background-color: #FADA5E;
+	background-color: #FADA5E;
+	/* background-image: url("../images/background-image.jpg"); */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* opacity: 0.3; */
 }
 
 .create-form {
