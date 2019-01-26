@@ -1,15 +1,6 @@
 <h1>PupMate!</h1>
 
 <h2 id="tagline">Find your puppy a playmate!</h2>
-
-<ul class="puppyList">
-    {{#each puppers}}
-        <li>
-            {{name}}
-        </li>
-    {{/each}}
-</ul> 
-
 	
 <form class="create-form">
 	<h2>Create your puppy profile!</h2>
@@ -69,9 +60,10 @@
 			</select>
 		</div>
 	</div>
-    <div class="form-group">
-        <label for="photo">Add a Photo (Optional)</label>
-        <input type="file" class="form-control-file" id="photo">
+    <div class="form-group row">
+      <div class="col">
+        <input class="form-control" type="url" value="Photo URL" id="photo">
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary">Add PupMate</button>
+    <a href="/api/pupper"><button type="submit" class="btn btn-primary">Add PupMate</button></a>
 </form>

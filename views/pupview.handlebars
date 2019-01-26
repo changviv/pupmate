@@ -1,0 +1,35 @@
+<h1 class="pupheader">PupMate!</h1>
+
+<div class="puppyList">
+	<ul>
+	    {{#each puppers}}
+	        <li>
+	        	<div class="card w-50" data-id="{{id}}">
+	        	  	<div class="card-header">
+	        	  	  	{{name}}
+	        	  	</div>
+	        	  	<div class="row">
+	        	  		<div class="col">
+	        	  			<div class="card-body">
+	        	  			  <p class="info breed">Breed: 	{{breed}}</p>
+	        	  			  <p class="info age">Age: {{age}}</p>
+	        	  			  <p class="info size">Size: {{size}}</p>
+	        	  			  <p class="info gender">Gender: 	{{gender}}</p>
+	        	  			  <p class="info neutered">Neutered/	Spayed: {{neutered}}</p>
+	        	  			  <p class="info city">City: {{city}}</p>
+	        	  			  <p class="info state">State:  {{state}}</p>
+	        	  			</div>
+	        	  		</div>
+	        	  		<div class="col">
+	        	  			<img src="{{photo}}"">
+	        	  		</div>
+	        	  	</div>
+	        	  	<a href="#" class="btn btn-primary">Let's Play!</a>  
+	        	</div>
+	        </li>
+	    {{/each}}
+	</ul> 
+</div>
+
+
+

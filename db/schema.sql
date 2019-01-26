@@ -9,7 +9,7 @@ CREATE TABLE puppers (
     name VARCHAR(255) NOT NULL,
     breed VARCHAR(255) NOT NULL,
     age INT NOT NULL,
-    size VARCHAR(1) NOT NULL,
+    size VARCHAR(2) NOT NULL,
     gender VARCHAR(1) NOT NULL,
     neutered BOOLEAN DEFAULT true,
     city VARCHAR(255) NOT NULL,

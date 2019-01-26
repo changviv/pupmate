@@ -1,5 +1,5 @@
 $(function() {
-	$(".puppyList").hide();
+
 
 	$(".create-form").on("submit", function(event) {
 		event.preventDefault();
@@ -23,7 +23,6 @@ $(function() {
 		}).then(
 		    function() {
 		      console.log("created new doggy");
-		      // Reload the page to get the updated list
 		      location.reload();
 		    }
 		);

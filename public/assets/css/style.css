@@ -28,3 +28,35 @@ h2 {
 	font-family: 'McLaren', cursive;
 	font-size: 34px;
 }
+
+.puppyList {
+	margin: 10px auto;
+}
+
+.pupheader {
+	margin-bottom: 35px;
+}
+
+ul {
+	margin-left: 10px;
+}
+
+li {
+	margin: 5px;
+}
+
+img {
+	height: 85%;
+	width:100%;
+	margin-top: 10px;
+	padding-right: 10px;
+}
+
+p.info {
+	margin: 0;
+}
+
+.card-body {
+	margin-top: 10px;
+	padding: 10px 0px 10px 20px;
+}

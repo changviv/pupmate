@@ -10,6 +10,12 @@ router.get("/", function (req, res) {
 	});
 });
 
+router.get("/api/pupper", function (req, res) {
+	pupper.all(function(data) {
+		res.render("pupview", { puppers: data });
+	});
+});
+
 // CREATE (POST) route
 router.post("/api/pupper", function(req, res){
 	var req = req.body
@@ -21,7 +27,6 @@ router.post("/api/pupper", function(req, res){
 
 	pupper.create(vals, function(result) {
 		res.json({ id: result.insertId });
-		// res.render("newview", { puppers: data });
 	});
 });
 
