@@ -2,20 +2,7 @@
 
 Find your puppy a playmate
 
-Use a Node and Express Web Server;
+Create your puppy profile and find dogs in your area.
 
-* Be backed by a MySQL Database an ORM (not necessarily Sequelize);
+Some details tell you the age, size, gender, neutered, and where they live. You'll be able to filter based on preference(WIP)
 
-* Have both GET and POST routes for retrieving and adding new data;
-
-* Be deployed using Heroku (with Data);
-
-* Utilize at least one new library, package, or technology that we haven’t discussed;
-
-* Have a polished frontend / UI;
-
-* Have folder structure that meets MVC Paradigm;
-
-* Meet good quality coding standards (indentation, scoping, naming).
-
-* Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md](../../../10-nodejs/03-Supplemental/Protecting-API-Keys-In-Node.md)
