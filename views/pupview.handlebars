@@ -1,4 +1,12 @@
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="/">Home</a>
+  </li>
+</ul>
+
 <h1 class="pupheader">PupMate!</h1>
+
+
 
 <div class="puppyList">
 	<ul>
@@ -21,15 +29,38 @@
 	        	  			</div>
 	        	  		</div>
 	        	  		<div class="col">
-	        	  			<img src="{{photo}}"">
+	        	  			<img src="{{photo}}">
 	        	  		</div>
 	        	  	</div>
-	        	  	<a href="#" class="btn btn-primary">Let's Play!</a>  
+								<button type="submit" class="btn btn-primary submit" data-target="results-modal">Let's Play</button>
 	        	</div>
 	        </li>
 	    {{/each}}
-	</ul> 
+	</ul>
 </div>
 
+
+
+
+		<div id="results-modal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Messaging Sent</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Connecting you to your new pup date!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 

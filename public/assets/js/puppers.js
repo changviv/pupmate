@@ -22,9 +22,13 @@ $(function() {
 		    data: newPuppers
 		}).then(
 		    function() {
-		      console.log("created new doggy");
 		      location.reload();
 		    }
 		);
 	});
+});
+
+
+$(".submit").on("click", function() {
+	$("#results-modal").modal("toggle");
 });
