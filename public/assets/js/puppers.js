@@ -1,6 +1,4 @@
 $(function() {
-
-
 	$(".create-form").on("submit", function(event) {
 		event.preventDefault();
 
@@ -14,15 +12,15 @@ $(function() {
 		    gender : $("#gender").val().trim(),
 		    neutered : ($("#neutered").val().trim() === "true") ? 1 : 0,
 		    photo : ($("#photo").val().trim() === "") ? "public/assets/images/default_profile.png" : $("#photo").val().trim()
-		 };
+		};
 
-		  // Send the POST request.
+		// Send the POST request.
 		$.ajax("/api/pupper", {
 		    type: "POST",
 		    data: newPuppers
 		}).then(
 		    function() {
-		      location.reload();
+				location.reload();
 		    }
 		);
 	});
