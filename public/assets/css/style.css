@@ -1,27 +1,44 @@
-body {
-	background-color: #FADA5E;
-	/* background-image: url("../images/background-image.jpg"); */
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#icon {
+	width: 45px;
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.col {
+	padding: 0;
+}
+
+.frontpage-container {
+	height: 100%;
+}
+#background-image {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* opacity: 0.3; */
+/*	position: absolute;
+	z-index: -1;*/
+	width:80%;
+	height: 100%;
+	margin: 0px 50px 0px;
+	padding: 0;
 }
 
 .create-form {
-	width: 75%;
+	width: 100%;
 	margin: 25px auto;
-	border: solid 1px grey;
-	border-radius: .4rem;
-	padding: 10px 50px 20px 50px;
-	box-shadow: 15px 15px 5px grey;
-	background-image: linear-gradient(lightyellow, gold);
+	padding: 10px 30px 20px 30px;
 }
 
-h1 {
+.navbar-brand {
 	font-family: 'McLaren', cursive;
-	font-size: 80px;
-	margin: 0 auto;
-	text-align: center;
+	font-size: 30px;
 }
 
 #tagline {
@@ -31,7 +48,7 @@ h1 {
 
 h2 {
 	font-family: 'McLaren', cursive;
-	font-size: 34px;
+	font-size: 25px;
 }
 
 .puppyList {
@@ -64,4 +81,64 @@ p.info {
 .card-body {
 	margin-top: 10px;
 	padding: 10px 0px 10px 20px;
+}
+
+/*sign up page*/
+
+#signup-left-image {
+    width: 50%;
+    float:left;
+	overflow:hidden;
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../images/background-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup-right-form {
+	display: inline-block;
+    width: 50%;
+    position: relative;
+    float:right;
+    padding: 45px 60px 100px 60px;
+    height: 100vh;
+    background: #fff;
+}
+
+.signup-content {
+	font-size: 100%;
+}
+
+#sign-up-title {
+	color: black;
+	font-size:3rem;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+#signup {
+	margin-top: 25px;
+	padding-left: 50px;
+}
+
+.button {
+	border-radius: .5rem;
+	font-family: 'Raleway', sans-serif;
+	background: #da7071;
+	color: white;
+	margin: 0 auto;
+	padding: 10px 50px;
+	text-align: center;
+	display: block;
+}
+
+#p-signin {
+	font-size: 11px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
 }

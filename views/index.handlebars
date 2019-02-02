@@ -1,69 +1,93 @@
-<h1>PupMate!</h1>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img id="icon" src="/assets/images/icon.svg"class="d-inline-block align-top" alt="">
+    PupMate!
+  </a>
+  <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="/signup">Sign Up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/login">Login</a>
+  </li>
+  </ul>
+</nav>
 
-<h2 id="tagline">Find your puppy a playmate!</h2>
-	
-<form class="create-form">
-	<h2>Create your puppy profile!</h2>
-	<div class="form-group">
-	  <input type="text" class="form-control" id="name" placeholder="Name">
-	</div>
-	<div class="form-group">
-	  <input type="text" class="form-control" id="breed" placeholder="Breed">
-	</div>
-	<div class="form-group form-row">
-	  	<div class="col-7">
-	        <input type="text" class="form-control" id="city" placeholder="City">
-	    </div>
-	    <div class="col">
-	        <input type="text" class="form-control" id="state" placeholder="State">
-	    </div>
-	</div>
-	<div class="form-group form-row">
-		<div class="col">
-			<select class="form-control" id="age">
-	    	  <option selected>Age</option>
-	    	  <option value="0"><1</option>
-	    	  <option value="1">1</option>
-	    	  <option value="2">2</option>
-	    	  <option value="3">3</option>
-	    	  <option value="4">4</option>
-	    	  <option value="5">5</option>
-	    	  <option value="6">6</option>
-	    	  <option value="7">7</option>
-	    	  <option value="8">8</option>
-	    	  <option value="9">9</option>
-	    	  <option value="10">10></option >
-	    	</select>
-		</div>
-		<div class="col">
-			<select class="form-control" id="size">
-			  <option selected>Size</option>
-			  <option value="XS">XS</option>
-			  <option value="S">S</option>
-			  <option value="M">M</option>
-			  <option value="L">L</option>
-			  <option value="XL">XL</option>
-			</select>
-		</div>    
-		<div class="col">
-			<select class="form-control" id="gender">
-			  <option selected>Gender</option>
-			  <option value="F">Female</option>
-			  <option value="M">Male</option>
-			</select>
-		</div>
-		<div class="col">
-			<select class="form-control" id="neutered">
-			  <option selected>Neutered/Spayed</option>
-			  <option value="true">Yes</option>
-			  <option value="false">No</option>
-			</select>
-		</div>
-	</div>
-    <div class="form-group row">
-      <div class="col">
-        <input class="form-control" type="url" value="Photo URL" id="photo">
-      </div>
+<div class="frontpage-container">
+  <div class="row">
+    <div class="col-6">
+      <img id="background-image" src="/assets/images/background-image.jpg">
     </div>
-    <a href="/api/pupper"><button type="submit" class="btn btn-primary">Add PupMate</button></a>
-</form>
+    <div class="col-6">
+      <h2 id="tagline">Find your puppy a playmate!</h2>
+      <form class="create-form" method="POST" action="/api/pupper">
+      	<h2>Create your puppy profile!</h2>
+      	<div class="form-group">
+      	  <input type="text" class="form-control" id="name" placeholder="Name">
+      	</div>
+      	<div class="form-group">
+      	  <input type="text" class="form-control" id="breed" placeholder="Breed">
+      	</div>
+      	<div class="form-group form-row">
+      	  	<div class="col-7">
+      	        <input type="text" class="form-control" id="city" placeholder="City">
+      	    </div>
+      	    <div class="col">
+      	        <input type="text" class="form-control" id="state" placeholder="State">
+      	    </div>
+      	</div>
+      	<div class="form-group form-row">
+      		<div class="col">
+      			<select class="form-control" id="age">
+      	    	  <option selected>Age</option>
+      	    	  <option value="0"><1</option>
+      	    	  <option value="1">1</option>
+      	    	  <option value="2">2</option>
+      	    	  <option value="3">3</option>
+      	    	  <option value="4">4</option>
+      	    	  <option value="5">5</option>
+      	    	  <option value="6">6</option>
+      	    	  <option value="7">7</option>
+      	    	  <option value="8">8</option>
+      	    	  <option value="9">9</option>
+      	    	  <option value="10">10></option >
+      	    	</select>
+      		</div>
+      		<div class="col">
+      			<select class="form-control" id="size">
+      			  <option selected>Size</option>
+      			  <option value="XS">XS</option>
+      			  <option value="S">S</option>
+      			  <option value="M">M</option>
+      			  <option value="L">L</option>
+      			  <option value="XL">XL</option>
+      			</select>
+      		</div>
+      		<div class="col">
+      			<select class="form-control" id="gender">
+      			  <option selected>Gender</option>
+      			  <option value="F">Female</option>
+      			  <option value="M">Male</option>
+      			</select>
+      		</div>
+      		<div class="col">
+      			<select class="form-control" id="neutered">
+      			  <option selected>Neutered/Spayed</option>
+      			  <option value="true">Yes</option>
+      			  <option value="false">No</option>
+      			</select>
+      		</div>
+      	</div>
+          <div class="form-group row">
+            <div class="col-12">
+              <input class="form-control" type="url" value="Photo URL" id="photo">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Add PupMate</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

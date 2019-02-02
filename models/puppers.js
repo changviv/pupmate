@@ -5,6 +5,7 @@ var pupper = {
 		orm.insert("puppers", vals, function(res) {
 			cb(res);
 		});
+		res.redirect("/pupview")
 	},
 	all: function(cb) {
         orm.all("puppers", function(res) {

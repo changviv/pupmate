@@ -1,4 +1,4 @@
-$(function() {
+
 	$(".create-form").on("submit", function(event) {
 		event.preventDefault();
 
@@ -20,11 +20,12 @@ $(function() {
 		    data: newPuppers
 		}).then(
 		    function() {
-				location.reload();
+				// location.reload();
+				pageRedirect();
 		    }
 		);
+		pageRedirect();
 	});
-});
 
 
 $(".submit").on("click", function() {
