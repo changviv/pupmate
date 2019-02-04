@@ -4,12 +4,6 @@ html, body {
 	border: 0;
 }
 
-#icon {
-	width: 45px;
-	height: 60px;
-	margin: 0px;
-	padding: 0px;
-}
 
 .col {
 	padding: 0;
@@ -82,8 +76,110 @@ p.info {
 	margin-top: 10px;
 	padding: 10px 0px 10px 20px;
 }
+/*-------------navigation bar-----------*/
+.navbar {
+	background-color: #da7071;
+	overflow: auto;
+}
 
-/*sign up page*/
+.nav-link, .navbar-title {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.navbar-title {
+	font-weight: bolder;
+	font-weight: 400px;
+	font-size: 45px;
+}
+
+#icon {
+	width: 45px;
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+}
+
+.smallfont {
+	font-size: 15px;
+}
+
+/* .searchbar {
+
+	/* float: right; */
+	/* display: inline-block */
+/* } */
+
+.navbar input[type=search] {
+border-radius: 1.5rem;
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+/* -------------Kyo--------------- */
+.input--kyo {
+	z-index: auto;
+}
+
+.input__field--kyo {
+	padding: 0.85em 1.5em;
+	width: 100%;
+	border-radius: 2em;
+	background: #fff;
+	color: #535d92;
+}
+
+.input__label--kyo {
+	z-index: 0;
+	padding: 0 0 0 2em;
+	width: 100%;
+	text-align: left;
+}
+
+/*.input__label--kyo::after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background: rgba(11, 43, 205, 0.6);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	pointer-events: none;
+}*/
+
+.input__label-content--kyo {
+	padding: 0.5em 0;
+}
+
+.input__field--kyo:focus,
+.input__field--kyo:focus +  .input__label--kyo .input__label-content--kyo {
+	z-index: 10000;
+}
+
+.input__field--kyo:focus + .input__label--kyo {
+	color: #fff;
+}
+
+.input__field--kyo:focus + .input__label--kyo::after {
+	opacity: 1;
+}
+
+/*----------sign up page-----------*/
+
+#signup-container {
+	overflow: auto;
+}
 
 #signup-left-image {
     width: 50%;
@@ -101,10 +197,10 @@ p.info {
 }
 
 #signup-right-form {
-	display: inline-block;
+	/* display: inline-block; */
     width: 50%;
     position: relative;
-    float:right;
+    float: right;
     padding: 45px 60px 100px 60px;
     height: 100vh;
     background: #fff;

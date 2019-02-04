@@ -1,66 +1,15 @@
-
-
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="/">Home</a>
-  </li>
-</ul>
-
-<h1 class="pupheader">PupMate!</h1>
-
-
-
-<div class="puppyList">
-	<ul>
-	    {{#each puppers}}
-	        <li>
-	        	<div class="card w-50" data-id="{{id}}">
-	        	  	<div class="card-header">
-	        	  	  	{{name}}
-	        	  	</div>
-	        	  	<div class="row">
-	        	  		<div class="col">
-	        	  			<div class="card-body">
-	        	  			  <p class="info breed">Breed: 	{{breed}}</p>
-	        	  			  <p class="info age">Age: {{age}}</p>
-	        	  			  <p class="info size">Size: {{size}}</p>
-	        	  			  <p class="info gender">Gender: 	{{gender}}</p>
-	        	  			  <p class="info neutered">Neutered/	Spayed: {{neutered}}</p>
-	        	  			  <p class="info city">City: {{city}}</p>
-	        	  			  <p class="info state">State:  {{state}}</p>
-	        	  			</div>
-	        	  		</div>
-	        	  		<div class="col">
-	        	  			<img src="{{photo}}">
-	        	  		</div>
-	        	  	</div>
-								<button type="submit" class="btn btn-primary submit" data-target="results-modal">Let's Play</button>
-	        	</div>
-	        </li>
-	    {{/each}}
+<nav class="navbar">
+	<a class="navbar-brand navbar-title" href="#">
+	    <img id="icon" src="/assets/images/icon.svg"class="d-inline-block align-top" alt="icon">
+	    PupMate!
+	</a>
+	<ul class="nav justify-content-end">
+		<input class="searchbar" type="search" placeholder="Search..">
+		<li class="nav-item">
+ 		  <a class="nav-link smallfont" href="/signup">Sign Up</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link smallfont" href="/login">Login</a>
+		</li>
 	</ul>
-</div>
-
-
-
-
-<div id="results-modal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalCenterTitle">Messaging Sent</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				Connecting you to your new pup date!
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-
+</nav>
