@@ -1,3 +1,10 @@
+$(function () {
+	$("#sidebar").mCustomScrollbar({
+		theme: "minimal",
+		axis: "y"
+	});
+});
+
 
 	$(".create-form").on("submit", function(event) {
 		event.preventDefault();

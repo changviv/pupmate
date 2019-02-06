@@ -82,10 +82,16 @@ p.info {
 	overflow: auto;
 }
 
+.navbar-small {
+	height: 10%;
+	background-color: #da7071;
+	overflow: auto;
+	text-align: center
+}
+
 .nav-link, .navbar-title {
 	color: white;
 	font-family: 'Raleway', sans-serif;
-
 }
 
 .navbar-title {
@@ -106,20 +112,27 @@ p.info {
 	font-size: 15px;
 }
 
-/* .searchbar {
-
-	/* float: right; */
-	/* display: inline-block */
-/* } */
-
 .navbar input[type=search] {
-border-radius: 1.5rem;
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+	border-radius: 1.5rem;
+	float: right;
+	padding: 6px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+}
+
+.small-icon {
+	width: 45px;
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+}
+
+.navbar-smalltitle {
+	font-size: 30px;
+	color: white;
 }
 
 
@@ -181,29 +194,42 @@ border-radius: 1.5rem;
 	overflow: auto;
 }
 
-#signup-left-image {
+.signup-left {
     width: 50%;
     float:left;
 	overflow:hidden;
     position: relative;
-    min-height: 100vh;
-    background-image: url(../images/background-image.jpg);
+	min-height: 100vh;
+	text-align: center;
+	vertical-align: middle;
+	background-color: white;
+}
+
+#signup-image{
+	height: 60vh;
+	width: 70%;
+	background-image: url(../images/background-image.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+	justify-content: center;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15%;
+	background-color: white;
 }
 
 #signup-right-form {
-	/* display: inline-block; */
     width: 50%;
     position: relative;
     float: right;
-    padding: 45px 60px 100px 60px;
+    padding: 100px 60px 100px 60px;
     height: 100vh;
-    background: #fff;
+	background: #fff;
 }
 
 .signup-content {
@@ -212,14 +238,13 @@ border-radius: 1.5rem;
 
 #sign-up-title {
 	color: black;
-	font-size:3rem;
+	font-size:2rem;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
 
 #signup {
 	margin-top: 25px;
-	padding-left: 50px;
 }
 
 .button {
