@@ -1,0 +1,36 @@
+<nav class="navbar-small">
+    <a class="navbar-brand navbar-smalltitle" href="#">
+        <img class="small-icon" src="/assets/images/icon.svg" class="d-inline-block align-top" alt="icon">
+        PupMate!
+    </a>
+</nav>
+<div class="signup-container">
+    <section class="signup-left">
+        <div id="login-image">
+        </div>
+    </section>
+    <section class="signup-right-form">
+        <section class="signup-content bgcolor-4">
+            <h2 id="login-title">Log in to PupDate</h2>
+            <form name="login" id="login" method="post" action="/login" class="needs-validation" novalidate>
+                <span class="input input--isao">
+                    <input class="input__field input__field--isao" type="text" id="email" required />
+                    <label class="input__label input__label--isao" for="email" data-content="Email">
+                        <span class="input__label-content input__label-content--isao">Email</span>
+                    </label>
+                </span>
+                <span class="input input--isao">
+                    <input class="input__field input__field--isao" type="password" id="password" required />
+                    <label class="input__label input__label--isao" for="password" data-content="Password">
+                        <span class="input__label-content input__label-content--isao">Password</span>
+                    </label>
+                </span>
+                <div class="buttons">
+                    <button class="button loginbutton" type="submit">Log in!</button>
+                    <hr>
+                    <p id="p-signin">Not a member? <a href="/signup">Click here to Sign up</a></p>
+                </div>
+            </form>
+        </section>
+    </section>
+</div>

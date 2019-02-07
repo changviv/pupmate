@@ -69,7 +69,7 @@
 	padding: 0.75em 0.1em 0.25em;
 	width: 100%;
 	background: transparent;
-	color: #afb3b8;
+	color: black;
 }
 
 .input__label--isao {
@@ -206,15 +206,6 @@ a:hover, a:focus {
 
 .bgcolor-4 { background: white; color: black; }
 
-/*.bgcolor-1 { background: #f0efee; }
-.bgcolor-2 { background: #f9f9f9; }
-.bgcolor-3 { background: #e8e8e8; }
-.bgcolor-4 { background: #2f3238; color: #fff; }
-.bgcolor-5 { background: #df6659; color: #521e18; }
-.bgcolor-6 { background: #2fa8ec; color: #fff;}
-.bgcolor-7 { background: #d0d6d6; }
-.bgcolor-8 { background: #3d4444; color: #fff; }
-.bgcolor-9 { background: #8781bd; color: #fff; }*/
 
 body .nomargin-bottom {
 	margin-bottom: 0;

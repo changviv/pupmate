@@ -83,11 +83,13 @@ p.info {
 }
 
 .navbar-small {
-	height: 10%;
+	height: 5%;
 	background-color: #da7071;
 	overflow: auto;
 	text-align: center
 }
+
+
 
 .nav-link, .navbar-title {
 	color: white;
@@ -106,6 +108,10 @@ p.info {
 	margin: 0px;
 	padding: 0px;
 	color: white;
+}
+
+.navbar-brand {
+	padding: 0px;
 }
 
 .smallfont {
@@ -190,7 +196,7 @@ p.info {
 
 /*----------sign up page-----------*/
 
-#signup-container {
+.signup-container {
 	overflow: auto;
 }
 
@@ -202,12 +208,12 @@ p.info {
 	min-height: 100vh;
 	text-align: center;
 	vertical-align: middle;
-	background-color: white;
+	background-color: #fff;
 }
 
-#signup-image{
-	height: 60vh;
-	width: 70%;
+.signup-image, #login-image {
+	height: 65vh;
+	width: 65%;
 	background-image: url(../images/background-image.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -223,11 +229,15 @@ p.info {
 	background-color: white;
 }
 
-#signup-right-form {
+/* #login-image {
+	background-image: url(../images/background-image.jpg);
+} */
+
+.signup-right-form {
     width: 50%;
     position: relative;
     float: right;
-    padding: 100px 60px 100px 60px;
+    padding: 45px 60px 100px 60px;
     height: 100vh;
 	background: #fff;
 }
@@ -236,11 +246,12 @@ p.info {
 	font-size: 100%;
 }
 
-#sign-up-title {
+#sign-up-title, #login-title {
 	color: black;
 	font-size:2rem;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
+	font-weight: bolder
 }
 
 #signup {
