@@ -118,7 +118,7 @@ p.info {
 	font-size: 15px;
 }
 
-.navbar input[type=search] {
+.search-container input[type=search] {
 	border-radius: 1.5rem;
 	float: right;
 	padding: 6px;
@@ -126,6 +126,7 @@ p.info {
 	margin-top: 8px;
 	margin-right: 16px;
 	font-size: 17px;
+	width: 50%
 }
 
 .small-icon {
@@ -139,6 +140,7 @@ p.info {
 .navbar-smalltitle {
 	font-size: 30px;
 	color: white;
+	font-family: 'Raleway', sans-serif;
 }
 
 
