@@ -1,8 +1,8 @@
 $(function () {
-	$("#sidebar").mCustomScrollbar({
-		theme: "minimal",
-		axis: "y"
-	});
+	// $("#sidebar").mCustomScrollbar({
+	// 	theme: "minimal",
+	// 	axis: "y"
+	// });
 });
 
 

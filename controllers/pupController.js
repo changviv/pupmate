@@ -26,7 +26,7 @@ router.get("/login", function (req, res) {
 
 router.get("/search", function (req, res) {
 	pupper.all(function(data) {
-		res.render("search");
+		res.render("search", { puppers: data });
 	});
 });
 

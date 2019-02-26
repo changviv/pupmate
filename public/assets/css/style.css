@@ -310,7 +310,7 @@ p.info {
 	padding: 0;
 }
 
-.card {
+.card, section {
 	position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -348,4 +348,10 @@ p.info {
 
 h5.card-title {
 	text-align: left;
+}
+
+section {
+	height: 70vh;
+	padding:10px;
+	background-color:#da7071;
 }
