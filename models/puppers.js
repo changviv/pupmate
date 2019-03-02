@@ -1,11 +1,12 @@
 var orm = require("../config/orm.js")
 
 var pupper = {
-	create: function(vals, cb) {
-		orm.insert("puppers", vals, function(res) {
+	updateSearch: function(val, cb) {
+		console.log("pupper/updateSearch")
+		orm.update("puppers", val, function(res) {
+			console.log("pupper/updateSearch orm/update")
 			cb(res);
 		});
-		res.redirect("/pupview")
 	},
 	all: function(cb) {
         orm.all("puppers", function(res) {

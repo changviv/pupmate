@@ -20,9 +20,15 @@ var orm = {
 		connection.query(queryString, [table], function(err, result) {
 			if (err) throw err;
 			cb(result);
-			console.log("it's working")
-			// console.log("Select All Results:");
-			// console.log(result);
+			console.log("orm/all")
+		});
+	},
+	update: function(table, val, cb) {
+		queryString = "SELECT * FROM ?? WHERE city= ?";
+		connection.query(queryString, [table, val], function (err, result) {
+			console.log("ORM/UPDATE")
+			if (err) {throw err};
+			cb(result);
 		});
 	},
 	// CREATE (POST method)

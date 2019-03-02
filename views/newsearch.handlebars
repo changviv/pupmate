@@ -1,0 +1,57 @@
+<nav class="navbar">
+    <a class="navbar-brand navbar-title" href="#">
+        <img id="icon" src="/assets/images/icon.svg" class="d-inline-block align-top" alt="icon">
+        PupMate!
+    </a>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link smallfont" href="/signup">Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link smallfont" href="/login">Login</a>
+        </li>
+    </ul>
+</nav>
+
+
+<div class="search-container">
+    <form id="searchform">
+        <input name="search" type="text" placeholder="Search by city...">
+        <button id="search-button" type="submit" class="btn btn-outline-primary">Submit</button>
+    </form>
+</div>
+
+
+<div class="results-container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/images/zoe.jpeg" class="card-img-top" alt="...">
+                <div class="rescard-body">
+                    <p class="card-title">Zoe</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <h3>Searching for all pups</h3>
+            <section class="results-section">
+                {{#each puppers}}
+                <div class="card inner-card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src={{photo}} class="card-img" alt={{name}}>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{name}}</h5>
+                                <p class="card-text">Breed: {{breed}} </p>
+                                <p class="card-text">City: {{city}} </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </section>
+        </div>
+    </div>
